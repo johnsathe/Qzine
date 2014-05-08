@@ -9,7 +9,14 @@ qzineApp.config(['$routeProvider',
             templateUrl: 'partials/home.html',
             controller: 'Home'
         }).
-
+        when('/login', {
+            templateUrl: 'partials/login.html',
+            controller: 'Login'
+        }).
+          when('/signup', {
+              templateUrl: 'partials/signup.html',
+              controller: 'SignUp'
+          }).
         otherwise({
             redirectTo: '/home'
         });
