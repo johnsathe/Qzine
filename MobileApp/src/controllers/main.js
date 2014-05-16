@@ -26,7 +26,9 @@ function ($scope, $location) {
     $(document.body).addClass("loginbg");
     $scope.goBack = function () {
         $location.path('/home');
-
+    };
+    $scope.doGo = function () {
+        Auth.Check($scope.username, $scope.password);
     };
 }]);
 homeControllers.controller('SignUp', ['$scope', '$location',

@@ -21,3 +21,6 @@ qzineApp.config(['$routeProvider',
             redirectTo: '/home'
         });
   }]);
+
+var Application = {};
+Application.ServerUrl = "http://localhost:1337";
